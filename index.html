@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мультимедийные технологии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        audio, .video-container, .map-container {
+            margin: 20px 0;
+            max-width: 800px;
+        }
+        .animate {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#audio">Аудио</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#map">Карта</a></li>
+            <li><a href="#animation">Анимация</a></li>
+        </ul>
+    </nav>
+
+    <div id="audio" class="section">
+        <h2>Аудио</h2>
+        <audio controls>
+             <source src="audio/audio.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+
+    <div id="video" class="section">
+        <h2>Видео</h2>
+        <div class="video-container">
+            <!-- Видео с YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ekr2nIex040" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="map" class="section">
+        <h2>Карта</h2>
+        <div class="map-container">
+            <!-- Карта Google -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215019579035!2d-73.987844924525!3d40.74844097138997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTQuNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div id="animation" class="section">
+        <h2>Анимация</h2>
+        <p class="animate">Пример текста с анимацией.</p>
+    </div>
+</body>
+</html>
